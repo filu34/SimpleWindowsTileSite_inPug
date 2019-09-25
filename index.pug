@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        include includes/head.pug
+
+    body(onload="counting();")
+        #container
+            .rectangle
+                include includes/logo.pug
+    
+            .square
+                include includes/tiles.pug
+
+            .square
+                include includes/content.pug
+                include includes/socialmedia.pug
+                div(style='clear:both;')
+            div(style='clear:both;')
+            include includes/footer.pug

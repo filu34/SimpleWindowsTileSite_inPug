@@ -1,0 +1,32 @@
+-
+    const list = [
+        {
+            tile: 'tile1',
+            link: 'about',
+            icon: 'icon-user' 
+        },
+        {
+            tile: 'tilelinkhtml5',
+            link: 'offer',
+            icon: 'icon-laptop' 
+        },
+        {
+            tile: 'tile2',
+            link: 'cv',
+            icon: 'icon-graduation-cap' 
+        },
+        {
+            tile: 'tile3',
+            link: 'contact',
+            icon: 'icon-mail' 
+        },
+        {
+            tile: 'tile4',
+            link: null,
+            icon: null 
+        },]
+    
+- for (let {tile: t, link: l, icon: i} of list) 
+    div(class=`${t}`)
+        a(class='tilelink' href=`${l}.html`)
+            i(class=`${i}`)

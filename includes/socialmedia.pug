@@ -1,0 +1,27 @@
+-
+    const listOfIcons = [
+        {
+            tile: 'yt',
+            link: 'https://youtube.com',
+            icon: 'icon-youtube'
+        },
+        {
+            tile: 'fb',
+            link: 'https://facebook.com',
+            icon: 'icon-facebook'
+        },
+        {
+            tile: 'gplus',
+            link: 'https://plus.google.com',
+            icon: 'icon-gplus'
+        },
+        {
+            tile: 'twitter',
+            link: 'https://twitter.com',
+            icon: 'icon-twitter'
+        }]
+
+- for (let {tile: t, link: l, icon: i} of listOfIcons)
+    div(class=`${t}`)
+        a.sociallink(href=`${l}`)
+            i(class=`${i}`)
